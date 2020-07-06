@@ -17,6 +17,7 @@
         <module>tortoiseX-datasource-hive</module>
         <module>tortoiseX-datasource-hbase</module>
         <module>tortoiseX-datasource-mongodb</module>
+        <module>tortoiseX-datasource-mysql</module>
 
     </modules>
 

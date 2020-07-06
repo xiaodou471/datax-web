@@ -1,14 +1,17 @@
 package com.tortoisex.datasource.spi;
 
-import static java.util.Collections.emptyList;
+import com.tortoisex.datasource.spi.api.DatasourcePlugin;
+
 
 /**
  * TortoiseX datasource plugin interface
  */
 public interface TortoiseXDatasourcePlugin {
 
-    default Iterable<TortoiseXDatasourceFactory> getAlertChannelFactorys()
-    {
-        return emptyList();
-    }
+    /**
+     * create an datasource plugin
+     *
+     * @return an datasource plugin
+     */
+    DatasourcePlugin createPlugin();
 }
