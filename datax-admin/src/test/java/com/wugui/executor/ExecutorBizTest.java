@@ -21,7 +21,7 @@ public class ExecutorBizTest {
 
     public static void main(String[] args) throws Exception {
 
-        // param
+        // param测试
         String jobHandler = "demoJobHandler";
         String params = "";
 
