@@ -152,9 +152,11 @@ public class JobTrigger {
         } else if (IncrementTypeEnum.PARTITION.getCode().equals(incrementType)) {
             triggerParam.setPartitionInfo(jobInfo.getPartitionInfo());
         } else if (IncrementTypeEnum.MONGODB_ID.getCode().equals(incrementType)) {
+
             triggerParam.setStartId(jobInfo.getIncStartId());
             String endId = new ObjectId(triggerTime).toHexString();
             triggerParam.setEndId(endId);
+
         }
         triggerParam.setReplaceParam(jobInfo.getReplaceParam());
         //jvm parameter
